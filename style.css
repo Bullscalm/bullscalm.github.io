@@ -1,43 +1,27 @@
-p {
-	margin-bottom: 12px;
+.quote {
+  display: inline-block;
+  padding: 20px 30px;
+
+  /* BEGIN (write your solution here) */
+  color: #404040;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  
+  /* END */
+
+  border: 1px solid #bbb;
+  border-radius: 50px 0 50px 0;
 }
 
-h1,h2,h3 {
-	font-weight: 400;
+.quote-author {
+  display: block;
+
+  /* BEGIN (write your solution here) */
+  font-weight: normal;
+  text-align: right;
+  font-size: 16px;
+  
+  
+  /* END */
 }
-
-h1 {
-	font-size: 36;
-	margin-bottom: 0;
-}
-
-h2 {
-	font-size: 32px;
-	border-bottom: 1px solid grey;
-	margin-bottom: 8;
-}
-
-#header h2.header-title {
-	font-size: 18px;
-	border-bottom: none;
-	margin-bottom: 10px;
-
-}
-
-#header {
-	margin-bottom: 32px;
-	text-align: center;
-}
-
-
-#footer {
-	margin-top: 64px;
-	text-align: center;
-}
-
-#main {
-	width: 75%;
-	margin-left: auto;
-	margin-right: auto; 
-}
-
