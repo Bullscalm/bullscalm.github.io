@@ -44,6 +44,7 @@ for (let i = 0; i < getQuantityElements(100 * setting.traffic); i++) {
     enemy.y = -100 * setting.traffic * (i + 1);
     enemy.style.left = Math.floor(Math.random() * (gamearea.offsetWidth - 50)) + 'px';
     enemy.style.top = enemy.y + 'px';
+    enemy.style.background = 'transparent url(./image/enemy2.png) center / cover no-repeat';
     gamearea.appendChild(enemy);
 
 }
