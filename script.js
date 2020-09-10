@@ -42,6 +42,7 @@ for (let i = 0; i < getQuantityElements(100 * setting.traffic); i++) {
     const enemy = document.createElement('div');
     enemy.classList.add('enemy');
     enemy.y = -100 * setting.traffic * (i + 1);
+    enemy.style.left = Math.floor(Math.random() * (gamearea.offsetWidth - 50)) + 'px';
     enemy.style.top = enemy.y + 'px';
     gamearea.appendChild(enemy);
 
@@ -115,5 +116,11 @@ function moveEnemy() {
     enemy.forEach(function(item){
         item.y += setting.speed / 2;
         item.style.top = item.y + 'px';
+        if (item.y >= document.documentElement.clientHeight) {
+            item.y = -100 * setting.traffic;
+            item.style.left = Math.floor(Math.random() * (gamearea.offsetWidth - 50)) + 'px';
+        }
     })
+
+    
 }
